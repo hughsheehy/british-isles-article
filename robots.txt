@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+Disallow: /.local-editor/
+Disallow: /backups/
+
+Sitemap: https://hughsheehy.github.io/british-isles-article/sitemap.xml
