@@ -10,6 +10,9 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
 User-agent: facebookexternalhit
 Allow: /
 
@@ -22,4 +25,4 @@ Allow: /
 Disallow: /.local-editor/
 Disallow: /backups/
 
-Sitemap: https://hughsheehy.github.io/british-isles-article/sitemap.xml
+Sitemap: https://articles.hughsheehy.com/sitemap.xml

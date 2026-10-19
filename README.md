@@ -2,7 +2,7 @@
 
 Static article site for "Why Ireland is not a British isle".
 
-**[Read the article →](https://hughsheehy.github.io/british-isles-article/)**
+**[Read the article →](https://articles.hughsheehy.com/)**
 
 ## Rights
 
