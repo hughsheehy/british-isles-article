@@ -6,9 +6,9 @@ Static article site for "Why Ireland is not a British isle".
 
 ## Rights
 
-The article text and original site code are shareable with attribution under the terms in [LICENSE](LICENSE).
+© 2024–2026 Hugh Sheehy. All rights reserved. The article text and original site code may not be reproduced, republished or adapted without permission, except for brief quotations with attribution. See [LICENSE](LICENSE).
 
-Images and other sourced visual materials in `british-isles/assets/` are not claimed as copyrighted by Hugh Sheehy unless explicitly stated, and may be subject to separate rights.
+Images and other sourced visual materials in `british-isles/assets/` are not claimed as copyrighted by Hugh Sheehy unless explicitly stated, and remain subject to their own rights.
 
 ## Contents
 
