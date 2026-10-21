@@ -12,7 +12,9 @@ Images and other sourced visual materials in `british-isles/assets/` are not cla
 
 ## Contents
 
-- `british-isles/index.html` - the standalone article page
+- `british-isles/index.html` - the main article
+- `british-isles/evidence/index.html` - the evidence page (the appendices: bad excuses, sources and PS's)
+- `british-isles/site.css`, `british-isles/site.js` - shared styles and scripts for both pages
 - `index.html` - root page, currently redirects to the article
 - `british-isles/assets/` - images and other static assets used by the page
 
