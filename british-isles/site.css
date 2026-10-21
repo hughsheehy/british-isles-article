@@ -269,4 +269,10 @@ blockquote {
   border-top: 1px solid var(--line);
   font-weight: 600;
 }
-
+.figure-narrow img {
+  max-width: 340px;
+  margin: 0 auto;
+}
+.figure-narrow figcaption {
+  text-align: center;
+}
