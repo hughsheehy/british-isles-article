@@ -80,6 +80,22 @@ body {
   color: #4a423a;
   margin: 2.2rem 0 0.6rem;
 }
+.heading-anchor {
+  margin-left: 0.4em;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+h2:hover .heading-anchor, h3:hover .heading-anchor, h4:hover .heading-anchor, .heading-anchor:focus {
+  opacity: 1;
+}
+@media (hover: none) {
+  .heading-anchor {
+    opacity: 0.45;
+  }
+}
 .toc a:hover {
   color: var(--accent);
 }

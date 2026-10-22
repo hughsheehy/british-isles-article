@@ -13,7 +13,8 @@ document.querySelectorAll('.page h2, .page h3, .page h4').forEach((heading) => {
   const base = slugify(heading.textContent) || 'section';
   const count = headingCounts.get(base) || 0;
   headingCounts.set(base, count + 1);
-  heading.id = count === 0 ? base : `${base}-${count + 1}`;
+  // Prefer the id written into the HTML; fall back to one generated from the text.
+  heading.id = heading.id || (count === 0 ? base : `${base}-${count + 1}`);
   const item = document.createElement('li');
   const link = document.createElement('a');
   link.href = `#${heading.id}`;
@@ -25,6 +26,13 @@ document.querySelectorAll('.page h2, .page h3, .page h4').forEach((heading) => {
   }
   item.appendChild(link);
   tocList.appendChild(item);
+  // Hover link so readers can copy a link to this section.
+  const anchor = document.createElement('a');
+  anchor.className = 'heading-anchor';
+  anchor.href = `#${heading.id}`;
+  anchor.setAttribute('aria-label', 'Link to this section');
+  anchor.textContent = '#';
+  heading.appendChild(anchor);
 });
 function closeLightbox() {
   lightbox.classList.remove('open');
