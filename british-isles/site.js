@@ -56,6 +56,8 @@ if (toc && toc.dataset.otherHref) {
   item.className = 'toc-other';
   const link = document.createElement('a');
   link.href = toc.dataset.otherHref;
+  link.target = '_blank';
+  link.rel = 'noopener';
   link.textContent = toc.dataset.otherLabel;
   item.appendChild(link);
   tocList.appendChild(item);
