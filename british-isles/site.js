@@ -9,7 +9,7 @@ function slugify(text) {
     .replace(/^-+|-+$/g, '');
 }
 const headingCounts = new Map();
-document.querySelectorAll('.page h2, .page h3').forEach((heading) => {
+document.querySelectorAll('.page h2, .page h3, .page h4').forEach((heading) => {
   const base = slugify(heading.textContent) || 'section';
   const count = headingCounts.get(base) || 0;
   headingCounts.set(base, count + 1);
@@ -20,6 +20,8 @@ document.querySelectorAll('.page h2, .page h3').forEach((heading) => {
   link.textContent = heading.textContent;
   if (heading.tagName === 'H3') {
     link.className = 'sub';
+  } else if (heading.tagName === 'H4') {
+    link.className = 'sub2';
   }
   item.appendChild(link);
   tocList.appendChild(item);
